@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia Artesanal</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-image: url('https://i.pinimg.com/736x/ae/3e/03/ae3e03445253c5187d6c05c79bdc492a.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            backdrop-filter: brightness(0.9);
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .producto {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            width: 230px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .descripcion {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .precio {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .catalogo {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌿 Esencia Artesanal 🌿</h1>
+        <p>Jabones naturales hechos con amor y cuidado</p>
+    </header>
+    <section class="catalogo">
+        <div class="producto">
+            <img src="https://i.pinimg.com/736x/29/4e/cf/294ecf73b799496650eec35c76932d31.jpg" alt="Jabones de Verbena y Miel">
+            <p class="descripcion"><b>Caja con 6 Jabones Artesanales de Verbena-Miel (100g c/u)</b></p>
+            <p class="precio">$255.00 MXN</p>
+        </div>
+        <div class="producto">
+            <img src="https://i.pinimg.com/736x/83/cf/11/83cf11f46bb94371fd79f369a6d7da63.jpg" alt="Jabones de Lavanda">
+            <p class="descripcion"><b>Caja con 6 Jabones Artesanales de Lavanda (100g c/u)</b></p>
+            <p class="precio">$255.00 MXN</p>
+        </div>
+        <div class="producto">
+            <img src="https://i.pinimg.com/736x/cc/36/4f/cc364f58f0a3250a858dc8653d848592.jpg" alt="Jabones de Mandarina">
+            <p class="descripcion"><b>Caja con 6 Jabones Artesanales de Mandarina (100g c/u)</b></p>
+            <p class="precio">$255.00 MXN</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Esencia Artesanal — Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
